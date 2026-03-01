@@ -15,12 +15,15 @@ This template provides a clean and well-structured foundation for building FastA
 
 ## Todo
 
-- [x] Setup project structure
-- [x] Create database models and implement database connection
-- [x] Test with real database (e.g., PostgreSQL, MySQL)
-- [ ] Test on real project
-- [ ] Implement end-to-end tests setup
-- [ ] Implement integration tests setup
+| Description | Status |
+|---|---|
+| Setup project structure | ✅ |
+| Create database models and implement database connection | ✅ |
+| Test with real database (e.g., PostgreSQL, MySQL) | ✅ |
+| Setup migration (alembic) | ✅ |
+| Test on real project | ☕ |
+| Implement end-to-end tests setup | ⛔ |
+| Implement integration tests setup | ⛔ |
 
 ## Setup
 
