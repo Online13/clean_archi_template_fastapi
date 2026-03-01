@@ -2,11 +2,13 @@
 # Clean Architecture Template for FastAPI Applications
 
 [![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-orange.json)](https://github.com/copier-org/copier)
+![SQLModel](https://img.shields.io/badge/ORM-SQLModel-blue)
 
-This template provides a clean and well-structured foundation for building FastAPI applications using Clean Architecture principles. It clearly separates business logic, use cases, infrastructure, and the API layer to ensure maintainability, testability, and scalability. With an explicit project structure and built-in testing strategy, it serves as a solid starting point for developing professional and production-ready backends.
+This template provides a clean and well-structured foundation for building FastAPI applications using Clean Architecture principles. It uses **SQLModel** as the ORM and **PostgreSQL** as the database. It clearly separates business logic, use cases, infrastructure, and the API layer to ensure maintainability, testability, and scalability. With an explicit project structure and built-in testing strategy, it serves as a solid starting point for developing professional and production-ready backends.
 
 ## Requirements
 - Python 3.10 or higher
+- PostgreSQL 
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) for managing virtual environments and dependencies
 - [justfile](https://just.systems/man/en/packages.html) for command runner
 

@@ -28,3 +28,6 @@ _message_after_copy: |
   4. Start developing your project!
 
       $ just dev
+
+_tasks:
+  - "git init"
