@@ -24,13 +24,16 @@ This template provides a clean and well-structured foundation for building FastA
 
 ## Setup
 
-1. Clone the repository:
-2. Navigate to the project directory:
-3. Install dependencies:
+1. Create project with 
+   ```bash
+   uvx create-clean-archi-fastapi
+   ```
+3. Navigate to the project directory:
+4. Install dependencies:
    ```bash
    uv sync
    ```  
-4. Run the application:
+5. Run the application:
    ```bash
    just start
     ```
