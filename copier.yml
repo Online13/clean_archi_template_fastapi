@@ -9,17 +9,13 @@ project_description:
   type: str
   help: Describe your project in a few sentences.
 
-version:
+architecture:
   type: str
-  default: "0.1.0"
-
-author_name:
-  type: str
-  help: Author name
-
-author_email:
-  type: str
-  help: Author email
+  help: What architecture do you want to use?
+  choices:
+    - "Model View Controller (MVC)"
+    - "Clean Architecture"
+  default: "Clean Architecture"
 
 _message_after_copy: |
   Your project "{{ project_name }}" has been created successfully!

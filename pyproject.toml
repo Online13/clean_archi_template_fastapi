@@ -1,7 +1,7 @@
 [project]
-name = "create-clean-archi-fastapi"
+name = "create-fastapi-app"
 version = "0.1.9"
-description = "A CLI tool to create a FastAPI project with a clean architecture template."
+description = "A CLI tool to create a FastAPI project."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
@@ -9,4 +9,4 @@ dependencies = []
 
 [project.scripts]
 
-create-clean-archi-fastapi = "create_clean_archi_fastapi.__main__:main"
+create-fastapi-app = "create_fastapi_app.__main__:main"
