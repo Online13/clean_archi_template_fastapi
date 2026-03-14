@@ -6,6 +6,6 @@ def main():
         "copier",
         "copy",
         "--trust",
-        "gh:Online13/create_fastapi_app",
+        "gh:Online13/create_modern_fastapi",
         "."
     ])
