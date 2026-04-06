@@ -1,12 +1,19 @@
 [project]
 name = "create-modern-fastapi"
-version = "0.3.0"
+version = "0.4.0"
 description = "A CLI tool to create a FastAPI project."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "click>=8.3.1",
+    "jinja2>=3.1.6",
+    "pydantic>=2.12.5",
+    "questionary>=2.1.1",
+]
 
 
 [project.scripts]
+create-modern-fastapi = "create_modern_fastapi.cli:main"
 
-create-modern-fastapi = "create_modern_fastapi.__main__:main"
+[tool.uv]
+package = true

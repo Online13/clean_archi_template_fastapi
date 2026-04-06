@@ -1,0 +1,31 @@
+exclude = [
+    ".venv",
+    ".vscode",
+    "dist",
+    ".gitignore",
+    "build",
+    "docs",
+    "examples",
+    "migrations",
+    "site-packages",
+    "__pycache__",
+    "__pypackages__",
+    ".git",
+]
+line-length = 88
+indent-width = 3
+target-version = "py312"
+
+[lint]
+select = ["E4", "E7", "E9", "F"]
+ignore = ["E712", "E711"]
+fixable = ["ALL"]
+unfixable = []
+
+[format]
+quote-style = "double"
+indent-style = "tab"
+line-ending = "auto"
+
+[lint.isort]
+relative-imports-order = "closest-to-furthest"

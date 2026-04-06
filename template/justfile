@@ -1,0 +1,36 @@
+# To export env variables from .env file
+set dotenv-load
+
+# run ----------------------------------------------------------
+
+start:
+    uv run uvicorn main:app --port $PORT --host $HOST
+
+dev:
+    uv run uvicorn main:app --reload --port $PORT --host $HOST
+
+# test ----------------------------------------------------------
+
+test-unit:
+    uv run pytest tests/unit/
+
+test-coverage:
+    uv run coverage run -m pytest tests/unit/
+    uv run coverage report -m
+
+test-clean:
+    uv run pytest tests/clean
+
+# migration -----------------------------------------------------
+
+check:
+    alembic check
+
+makemigration comment:
+    alembic revision --autogenerate -m "{{comment}}"
+
+migrate:
+    alembic upgrade head
+
+logmigration:
+    alembic history --verbose

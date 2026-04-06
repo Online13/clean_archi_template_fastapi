@@ -1,8 +1,7 @@
 
 # Clean Architecture Template for FastAPI Applications
 
-![SQLModel](https://img.shields.io/badge/version-0.1.9-black)
-[![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-orange.json)](https://github.com/copier-org/copier)
+![SQLModel](https://img.shields.io/badge/version-0.4.0-black)
 ![SQLModel](https://img.shields.io/badge/ORM-SQLModel-blue)
 
 This template provides a clean and well-structured foundation for building FastAPI applications using Clean Architecture principles. It uses **SQLModel** as the ORM and **PostgreSQL** as the database. It clearly separates business logic, use cases, infrastructure, and the API layer to ensure maintainability, testability, and scalability. With an explicit project structure and built-in testing strategy, it serves as a solid starting point for developing professional and production-ready backends.
@@ -29,7 +28,7 @@ This template provides a clean and well-structured foundation for building FastA
 
 1. Create project with 
    ```bash
-   uvx create-clean-archi-fastapi
+   uvx create-modern-fastapi
    ```
 3. Navigate to the project directory:
 4. Install dependencies:
@@ -61,6 +60,9 @@ flowchart LR
 
 ## Project Structure
 
+In progress...
+
+<!-- 
 ```
 .
 ├── justfile
@@ -97,7 +99,7 @@ flowchart LR
 │   └── utils.py ---------- --- Contains utility functions for tests
 └── uv.lock
 
-```
+``` -->
 
 ## Testing 
 
