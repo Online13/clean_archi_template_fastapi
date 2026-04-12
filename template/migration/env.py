@@ -7,7 +7,7 @@ from sqlmodel import SQLModel
 from alembic import context
 
 from src.infrastructure.env.env import Settings
-from src.infrastructure.persistence.database.models.app_models import *  # noqa: F403
+from src.infrastructure.persistence.database import models  # noqa: F401
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
