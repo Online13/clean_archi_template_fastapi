@@ -1,6 +1,7 @@
 from pathlib import Path
 import subprocess
 import shutil
+from importlib.resources import files
 from jinja2 import Environment, FileSystemLoader
 import os
 from collections.abc import Mapping
@@ -59,8 +60,9 @@ def create_template(
     Raises:
         Exception: If template source doesn't exist or operations fail
     """
-    # Get the template source directory (relative to this package)
-    template_source = Path(__file__).parent.parent / "template"
+    # Get the template source directory from the installed package data
+    template_ref = files("create_modern_fastapi") / "template"
+    template_source = Path(str(template_ref))
 
     if not template_source.exists():
         raise Exception(f"Template source not found: {template_source}")

@@ -1,10 +1,12 @@
 import click
 import questionary
+from importlib.metadata import version
 from create_modern_fastapi import service
 from create_modern_fastapi.domain import Entities, EntityType
 
 
 @click.group(invoke_without_command=True)
+@click.version_option(version("create-modern-fastapi"), "-v", "--version")
 @click.pass_context
 def main(ctx: click.Context) -> None:
     if ctx.invoked_subcommand is None:
